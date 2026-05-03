@@ -1,0 +1,22 @@
+# Model weights / fine-tuned adapters
+Notebook/optimized-model-finetuned/
+
+# HuggingFace cache
+hf_cache/
+.cache/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Model files
+*.pt
+*.bin
+*.safetensors
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
