@@ -121,7 +121,7 @@ derived artifacts including models trained on the data, making it
 incompatible with a public GitHub and HuggingFace deployment. The
 project pivoted to fully open datasets only.
 
-### 2. Dataset pipeline trade-off — pair collapse vs label noise
+### 2. Dataset pipeline trade-off pair collapse vs label noise
 
 The core tension was a classic biomedical NLP problem. Too strict a
 filter caused pair counts to collapse below a trainable threshold. Too
@@ -167,7 +167,7 @@ load fine-tuned and repeat. Metrics and plots run in Cell 6 after a
 kernel restart with no models in memory. BERTScore is forced to CPU to
 avoid GPU contention.
 
-### 7. Inference provider deprecation — runtime model substitution
+### 7. Inference provider deprecation runtime model substitution
 
 The deployment target was `mistralai/Mistral-7B-Instruct-v0.2`,
 matching the fine-tuned base model. Four approaches failed in sequence
