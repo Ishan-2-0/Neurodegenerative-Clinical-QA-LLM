@@ -1,8 +1,8 @@
-# Neurodegenerative Clinical QA — Fine-tuned LLM
+# Neurodegenerative Clinical QA Fine-tuned LLM
 
 A structured clinical information system for neurodegenerative diseases,
 built by fine tuning Mistral-7B-Instruct using QLoRA. The model explains
-symptoms, progression, and care guidance for Alzheimer's, Parkinson's,
+symptoms, progression and care guidance for Alzheimer's, Parkinson's,
 ALS, Huntington's and etc. while strictly refusing to
 diagnose, prescribe or express clinical certainty.
 
@@ -103,10 +103,10 @@ the fine-tuning was actually designed to improve.
 | Cell | Purpose |
 |------|---------|
 | Cell 1 | Data loading, filtering, formatting, balancing, freezing |
-| Cell 2 | Baseline model — zero-shot inference + loss check |
+| Cell 2 | Baseline model zero-shot inference + loss check |
 | Cell 3 | QLoRA fine-tuning + training loss curve |
-| Cell 4 | Fine-tuned model — quick inference test |
-| Cell 5 | Two-pass inference — generate + save outputs for both models |
+| Cell 4 | Fine-tuned model quick inference test |
+| Cell 5 | Two-pass inference generate + save outputs for both models |
 | Cell 6 | Metrics, evaluation, failure analysis, plots |
 
 ---
@@ -181,7 +181,7 @@ failures, 404s had been masking this single upstream fact.
 
 The fix was runtime model substitution: `Qwen/Qwen2.5-7B-Instruct`,
 same 7B class, available across  Together and Novita
-The fine-tuning work remains on Mistral in the
+The fine tuning work remains on Mistral in the
 notebook. Training and serving environments do not always use identical
 model versions, and understanding why is part of shipping real projects.
 
